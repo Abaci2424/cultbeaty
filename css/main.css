@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Inter:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=IBM+Plex+Sans+Arabic:wght@100&display=swap');
+
+*{
+  font-family: "Inter",Helvetica,sans-serif;
+  box-sizing:border-box; 
+}
+ .body{ 
+  width: 100%;
+  height: 100%;
+}
+
+.header-line{
+    display: flex;
+    align-items:center;
+    margin: 0 30px;
+}
+
+
+.boxSearch{
+  position: relative;
+  width: 440px;
+  margin: 0 auto;
+  
+}
+input.search-tst{
+  outline: none;
+  background: #ffffff;
+
+}
+.search-tst{
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid #494949;
+  padding: 7px;
+}
+
+.icon{
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.icon:before {
+  content: "\f002";;
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #0e0d0d;
+}
+.icon:hover{
+  background:#d3cccc
+}
+/*
+.fa-regular{
+  text-align: center;
+  padding-top: 13px;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  
+  color: rgb(0, 0, 0);
+}
+
+.fa-regular:hover{
+  background: rgb(240, 238, 238);
+  filter: brightness(25%) rgb(212, 208, 208) ;
+}
+
+*/
+
+
+ul#navMenu{
+  display: flex;
+  justify-content: space-evenly;
+  align-content:center;
+  text-align: center;
+  background: black;
+  padding: 8px 16px;
+  height: 40px;
+}
+a.nav-item:hover{
+  opacity: .4;
+}
+a.nav-item{
+  color: rgb(241, 243, 245);
+  text-decoration: none;
+  width: 30%;
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+.stripBanner{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #fae2cf ;
+  width: 100%;
+}
+.stripBanner_text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.42;
+  text-decoration: none;
+  color:#000;
+  padding: 12px 8px;
+  background: #fae2cf ;
+  font-weight: 600;
+}
+.slider-container{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.btn-prev , .btn-next{
+  position: absolute;
+  top: 400px;
+  background:rgba(0,0,0,.2);
+  color:#ffffff;
+  width: 40px;
+  height: 45px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  padding: 16px;
+  top:50%;
+}
+.fa-solid{
+  top:50%;
+  font-size: 18px;
+}
+.btn-next:hover , .btn-prev:hover{
+  opacity: .9;
+}
+.btn-prev{
+left: 0;
+}
+.btn-next{
+right: 0;
+}
+/*.slider-treck{
+  position: absolute;
+  width: 1340px;
+  height: 400px;
+  margin: 0 0 20px 0;
+  z-index: 0;
+}
+
+.slider-item{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img.slider-itemImg{
+   height: auto;
+   width: 100%;
+}
+*/
+.slider-treck{
+width: 100%;
+}
+.slider-itemImg{
+ width: 100%;
+}
+
+
+
+.bodyRadio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.boxRadio{
+  display: flex;
+  align-content:center;
+}
+.checkboxRadio{
+  display: flex;
+  justify-content: first baseline;
+  margin: 20px auto;
+
+}
+.inputRadio{
+  -webkit-appearence:none;
+  appearance: none;
+  position: absolute;
+}
+
+.radio-btn{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 3.2px;
+}
+.radio-btn2{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+}
+ .checkmark{
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  border-radius:50%;
+  background-color: rgb(247, 255, 255);
+}
+.checkmark3{
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  border-radius:50%;
+  background: black
+}
+.inputRadio:checked{
+  background:rgb(0, 0, 0)
+}
+.productSection{
+  display: flex;
+}
+.productCarousel{
+  display: flex;
+  justify-content: center;
+}
+
+.buttonProducte{
+  display: flex;
+  align-content:center;
+ justify-content: center;
+}
+  .responsiveProduct{
+  text-align: center;
+  font-family: "Inter",Helvetica,sans-serif;
+  font-size: 17px;
+  line-height: 1.33;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-bottom: 2px solid rgb(168, 167, 167);
+}
+.responsiveProduct:hover{
+  border-bottom: 4px solid black;
+}
+
+.buttonProducte{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.productBlock{
+  margin: 20px 6px;
+  max-width: 286px;
+  height: 496px;
+}
+
+.productName{
+  display: inline-block;
+  margin: 15px 4px;
+  text-align: left;
+}
+.productBlock_price{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 270px;
+  text-align: left;
+  padding: 4px 15px;
+  font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+    font-weight: 600;
+}
+.addToBag{
+   display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 8px;
+}
+  
+button.bag{
+  width: 270px;
+  height: 41px;
+  color: rgb(252, 251, 251);
+  border: 1px solid black;
+  background: black;
+  line-height: 1.5;
+  margin-top: 10%;
+}
+.addToBag:hover{
+  opacity: .7;
+  text-decoration: 1px underline white;
+}
+.papBannerLink{
+  display: inline;
+  align-items: center;
+  color: inherit;
+  border: 1px solid black;
+  background: white;
+  padding: 4px;
+  margin:10px 4px;
+  font-size: 13px;
+  line-height: 1.54;
+  font-weight: 400;
+}
+.containerImage{
+  display: flex;
+  align-items: center;
+  margin: 0 16px 32px 16px;
+}
+.brandLogos_cards{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.brandLogos_card{
+    min-width: 196px;
+    width: 196px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.brandLogos_link{
+  max-width: 100%;  
+}
+.brandLogos_image{
+  height: 100%!important;
+  width: 100%!important;
+}
+.brandLogos_link:hover{
+opacity: 1;
+}
+
+.primaryBanner_container{
+   text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 1349px;
+    height: 142.48px;
+    margin: 70px 0;
+}
+.primaryBanner{
+  display: initial;
+  width: 100%;
+}
+.primaryImage{
+  width: 100%;
+}
+.threeItemEditorial_container{
+  width: 1317px;
+  height: 531px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+.threeItemEditorial{
+  width: 439px;
+  height:177px ;
+  padding: 0 16px;
+}
+.threeItemEditorial_link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-family: "Inter",Helvetica,sans-serif;
+}
+
+  .threeItemEditorial_image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.threeItemEditorial_textContainer{
+  width: 407px;
+  height: 196px;
+  text-align: center;
+  flex-direction: column;
+  color:#333;
+}
+.threeItemEditorial-Subtitle{
+    font-size: 13px;
+    line-height: 1.54;
+    font-weight: 400;
+    letter-spacing: .2px;
+    text-transform: none;
+    margin-top: 16px;
+    margin-bottom: initial;
+    display: block;
+}
+.threeItemEditorial-Title{
+  font-size: 17px;
+    line-height: 1.33;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: initial;
+    display: block;
+}
+.threeItemEditorial-Des{
+  font-size: 14px;
+    line-height: 1.42;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: 8px;
+    margin-bottom: initial;
+    display: block;
+    flex-grow: 2;
+}
+.threeItemEditorial-CTAText{
+  display: inline-table;
+  width: 373px;
+  height: 20.016px;
+  margin-top: 16px;
+  border: 1px solid black;
+  padding: 8px 16px;
+  text-align: center;
+  color: #333;
+}
+.threeItemEditorial-CTAText:hover{
+    border-color: #000;
+    background-color: #e5e5e5;
+    color: #000;
+    text-decoration: underline;
+}
+
+.responsiveProductTitle{
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  text-align: center;
+}
+  .responsiveProduct_title{
+  font-family: "Cormorant Garamond",Helvetica,sans-serif;
+    font-size: 35px;
+    line-height: 1.14;
+    color: #000;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 48px 0 32px 0;
+}
+
+.threeEditorialTitle{
+  display: flex;
+}
+.threeEditorial_title{
+  text-align: center;
+}
+footer{
+  width: 100%;
+  border-top:20px solid #000;
+  margin-top: 60px;
+}
