@@ -6,11 +6,18 @@
 
 *{
   font-family: "Inter",Helvetica,sans-serif;
-  box-sizing:border-box; 
+  box-sizing:border-box;
 }
- .body{ 
+body{
   width: 100%;
   height: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
 }
 
 .header-line{
@@ -24,7 +31,6 @@
   position: relative;
   width: 440px;
   margin: 0 auto;
-  
 }
 input.search-tst{
   outline: none;
@@ -66,7 +72,7 @@ input.search-tst{
   height: 40px;
   width: 40px;
   background: #ffffff;
-  
+
   color: rgb(0, 0, 0);
 }
 
@@ -96,7 +102,7 @@ a.nav-item{
   width: 30%;
   font-size: 14px;
   font-weight: 400;
-  
+
 }
 .stripBanner{
   display: flex;
@@ -260,6 +266,9 @@ width: 100%;
   text-align: center;
 }
 .productBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 20px 6px;
   max-width: 286px;
   height: 496px;
@@ -282,20 +291,12 @@ width: 100%;
     font-weight: 600;
 }
 .addToBag{
-   display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 8px;
-}
-  
-button.bag{
-  width: 270px;
+  width: 100%;
   height: 41px;
-  color: rgb(252, 251, 251);
+  color: #ffffff;
   border: 1px solid black;
   background: black;
-  line-height: 1.5;
-  margin-top: 10%;
+  padding: 9px 9px;
 }
 .addToBag:hover{
   opacity: .7;
@@ -318,6 +319,9 @@ button.bag{
   align-items: center;
   margin: 0 16px 32px 16px;
 }
+.brandLogos {
+  width: 100%;
+}
 .brandLogos_cards{
   display: flex;
   justify-content: space-between;
@@ -327,28 +331,24 @@ button.bag{
 .brandLogos_card{
     min-width: 196px;
     width: 196px;
-    display: flex;
-    align-items: center;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 0 8px;
+    opacity: .8;
+}
+.brandLogos_card:hover{
+  opacity: 1;
 }
 .brandLogos_link{
-  max-width: 100%;  
+  max-width: 100%;
 }
 .brandLogos_image{
-  height: 100%!important;
-  width: 100%!important;
-}
-.brandLogos_link:hover{
-opacity: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .primaryBanner_container{
-   text-align: center;
-    position: relative;
     display: block;
     overflow: hidden;
-    width: 1349px;
+    width: 100%;
     height: 142.48px;
     margin: 70px 0;
 }
@@ -360,13 +360,15 @@ opacity: 1;
   width: 100%;
 }
 .threeItemEditorial_container{
+  /* todo: убрать абсолютную величину, выровнять по центру*/
   width: 1317px;
   height: 531px;
   display: flex;
   align-items: flex-start;
-  
+
 }
 .threeItemEditorial{
+  /* todo: убрать абсолютную величину*/
   width: 439px;
   height:177px ;
   padding: 0 16px;
