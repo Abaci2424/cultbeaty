@@ -13,10 +13,12 @@
      <header>
         <div class="container">
             <div class="header-line">
-                <div class="header-logo">
-<!--                    TODO:вставить svg -->
-                  <img src="img/logo/Screenshot_6.png" alt="">
-                </div >
+              <svg class="headerLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 552 443">
+              </svg>
+              </div >
+<!--                 <img src="img/logo/Screenshot_6.png" alt="">   TODO:вставить svg -->
+                  
+              
                <form class="boxSearch">
                     <input class="search-tst" type="text" placeholder="Search for a product or brand..." name="search"/>
                     <button class="icon" type="submit">
@@ -37,8 +39,9 @@
                 </div>
             </div>
             <!--                TODO:  убрать турецкие буквы-->
-            <dıv class="nav">
+                
 <!--                TODO:меню сделать hover как на сайте-->
+          <nav>
                 <ul id="navMenu">
                  <li><a class="nav-item" href="#">New & Treding</a></li>
                  <li><a class="nav-item" href="#">Brands</a></li>
@@ -55,17 +58,35 @@
                  <li><a class="nav-item" href="@">Offers</a></li>
                  <li><a class="nav-item" href="@">Blog</a></li>
                 </ul>
-            </div>
-<!--         TODO: сделать полоску с иконками-->
-
-            <div class="stripBanner">
-              <a href="/promo-codes/first15/view-all.list" class="stripBanner_text">
-                Get 15% OFF your first haul when you spend £25 with code FIRST15
-              </a>
-            </div>
-
+          </nav>
         </div>
-     </header>
+      </header>
+
+<!--         TODO: сделать полоску с иконками-->
+			<div class="responsiveUsp_link">
+				<a href="#" class="responsiveUsp_clickable">
+							<svg class="responsiveUsp_icon"></svg>
+					Free UK shipping over £25
+				</a>
+			</div>
+			<div class="responsiveUsp_link">
+				<a href="#" class="responsiveUsp_clickable">
+							<svg class="responsiveUsp_icon"></svg>
+					Get £10 credit for every friend you refer
+				</a>
+			</div>
+			<div class="responsiveUsp_link trackwidget" data-block-name="Cult USP Bar" data-context="call" data-widget-id="3001813" style="min-width: 250px; min-height:40px;">
+				<a href="#" class="responsiveUsp_clickable">		
+									<svg class="responsiveUsp_icon"></svg>	
+					Download our app
+				</a>
+			</div>
+
+  <div class="stripBanner">
+    <a href="/promo-codes/first15/view-all.list" class="stripBanner_text">
+      Get 15% OFF your first haul when you spend £25 with code FIRST15
+    </a>
+  </div>
      <!--         TODO: Исправить табуляцию-->
         <div class="slider-container">
             <div class="slider-track">
@@ -76,35 +97,20 @@
               <button class="btn-prev"><i class="fa-solid fa-angle-left"></i></button>
               <button class="btn-next"><i class="fa-solid fa-angle-right"></i></button>
            </div>
-       <section class="bodyRadio">
-           <div class="checkboxRadio">
-<!--               TODO: сделать span как на сайте -->
-            <label class="radio-btn">
-              <input class="inputRadio" type="radio" name="r">
-               <span class="checkmark"></span>
-            </label>
-            <label class="radio-btn">
-             <input class="inputRadio" type="radio" name="r">
-              <span class="checkmark"></span>
-           </label>
-           <label class="radio-btn">
-             <input class="inputRadio" type="radio" name="r">
-              <span class="checkmark"></span>
-           </label>
-           <label class="radio-btn">
-             <input class="inputRadio" type="radio" name="r" checked>
-              <span class="checkmark"></span>
-           </label>
-           <label class="radio-btn">
-             <input class="inputRadio" type="radio" name="r">
-              <span class="checkmark"></span>
-           </label>
-           <label class="radio-btn">
-            <input class="inputRadio" type="radio" name="r">
-             <span class="checkmark"></span>
-          </label>
-       </div>
-      </section>
+
+           
+  <section class="bodyNavBullet">  
+    <span class="responsiveSlider_navBullet">
+    </span>
+    <span class="responsiveSlider_navBullet">
+    </span>
+    <span class="responsiveSlider_navBullet">
+    </span>
+    <span class="responsiveSlider_navBullet">
+    </span>
+    <span class="responsiveSlider_navBullet">
+    </span>
+  </section>
 
 <!--                TODO: text-transform: uppercase;-->
      <section class="productTabs" id="product">
@@ -123,24 +129,24 @@
               <div class="productBlock">
                   <a class="productLink">
                     <img class="productImg" src="img/carousel/111-13695641.jpg">
-                    <h3 class="productName" data-track="product-title">
+                    <h3 class="productName">
                     Youth To The People Superfood Cleanser</h3>
                     <button class="papBannerLink"> BACK IN STOCK</button>
-                    <span class="productBlock_price">£12.00</span>
+                    <span class="productBlock_price">£24.00</span>
                   </a>
-                  <div class="addToBag"><button class="bag">ADD TO BAG</button></div>
+                <button class="addToBag">ADD TO BAG</button>
              </div>
 
               <div class="productBlock">
                   <a class="productLink">
                     <img class="productImg" src="img/carousel/222-13644769.jpg" alt="">
 <!--                      TODO: убрать дубликат id-->
-                    <h3 class="productName" data-track="product-title" id="productBlock_productName-13313764">
+                    <h3 class="productName">
                     Then I Met You Living Cleansing Balm </h3>
                     <button class="papBannerLink">EXCLUSIVE</button>
-                    <span class="productBlock_price">£32.00</span>
+                    <span class="productBlock_price">£19.00</span>
                 </a>
-                <div class="addToBag"><button class="bag" >ADD TO BAG</button></div>
+                <button class="addToBag" >ADD TO BAG</button>
               </div>
 
               <div class="productBlock">
@@ -149,9 +155,9 @@
                     <h3 class="productName">
                         Youth To The People Superfood Cleanser</h3>
                       <button class="papBannerLink">SAVE 20%</button>
-                      <span class="productBlock_price">£27.00</span>
+                      <span class="productBlock_price">£46.00</span>
                  </a>
-                 <div class="addToBag"></div><button class="bag" >ADD TO BAG</button></div>
+                 <button class="addToBag" >ADD TO BAG</button>
               </div>
 
              <div class="productBlock">
@@ -160,11 +166,10 @@
                     <h3 class="productName">
                         Qure Skincare Q-Rejuvalight Pro LED Light Therapy Mask 200g
                       </h3>
-                      <button class="papBannerLink">
-                        BACK IN STOCK</button>
-                        <span class="productBlock_price">£23.00</span>
+                      <button class="papBannerLink">BACK IN STOCK</button>
+                        <span class="productBlock_price">£33.00</span>
                     </a>
-                    <div class="addToBag"> <button class="bag">ADD TO BAG</button></div>
+                <button class="addToBag">ADD TO BAG</button>
              </div>
 
              <div class="productBlock">
@@ -175,85 +180,34 @@
                       <button  class="papBannerLink">FREE GIFT</button>
                       <span class="productBlock_price">£39.00</span>
                     </a>
-               <div class="addToBag"><button class="bag">ADD TO BAG</button></div>
+               <button class="addToBag">ADD TO BAG</button>
             </div>
          </div>
      </section>
 
-<section class="bodyRadio">
- <div class="boxRadio">
-     <div class="checkboxRadio">
-      <label class="radio-btn2">
-        <input class="inputRadio" type="radio" name="r">
-         <span class="checkmark"></span>
-      </label>
-      <label class="radio-btn2">
-       <input class="inputRadio" type="radio" name="r">
-        <span class="checkmark"></span>
-     </label>
-     <label class="radio-btn2">
-       <input class="inputRadio" type="radio" name="r">
-        <span class="checkmark"></span>
-     </label>
-     <label class="radio-btn2">
-       <input class="inputRadio" type="radio" name="r">
-        <span class="checkmark"></span>
-     </label>
-     <label class="radio-btn2">
-       <input class="inputRadio" type="radio" name="r">
-        <span class="checkmark"></span>
-     </label>
- </div>
 <!--     TODO: все кнопки в одном блоке-->
- <div class="checkboxRadio">
-   <label class="radio-btn2">
-     <input class="inputRadio" type="radio" name="r">
-      <span class="checkmark"></span>
-   </label>
-   <label class="radio-btn2">
-    <input class="inputRadio" type="radio" name="r">
-     <span class="checkmark"></span>
-  </label>
-  <label class="radio-btn2">
-    <input class="inputRadio" type="radio" name="r">
-     <span class="checkmark"></span>
-  </label>
-  <label class="radio-btn2">
-    <input class="inputRadio" type="radio" name="r">
-     <span class="checkmark"></span>
-  </label>
-  <label class="radio-btn2">
-    <input class="inputRadio" type="radio" name="r">
-     <span class="checkmark"></span>
-  </label>
-</div>
-<div class="checkboxRadio">
- <label class="radio-btn2">
-   <input class="inputRadio" type="radio" name="r">
-    <span class="checkmark3"></span>
- </label>
- <label class="radio-btn2">
-  <input class="inputRadio" type="radio" name="r">
-   <span class="checkmark3"></span>
-</label>
-<label class="radio-btn2">
-  <input class="inputRadio" type="radio" name="r">
-   <span class="checkmark3"></span>
-</label>
-<label class="radio-btn2">
-  <input class="inputRadio" type="radio" name="r">
-   <span class="checkmark3"></span>
-</label>
-<label class="radio-btn2">
-  <input class="inputRadio" type="radio" name="r">
-   <span class="checkmark3"></span>
-</label>
-</div>
-</div>
- </section>
+<section class="bodyNavBullet">
+  <span class="responsiveProductCarousel navBullet"></span>
+  <span class="responsiveProductCarousel navBullet"></span>
+  <span class="responsiveProductCarousel navBullet"></span>
+  <span class="responsiveProductCarousel navBullet"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+  <span class="responsiveProductCarousel"></span>
+</section>
 
-    <section>
-         <div class="containerImage">
+
+<section>
+  <div class="containerImage">
            <div class="brandLogos">
           <ul class="brandLogos_cards">
           <li class="brandLogos_card">
@@ -289,6 +243,15 @@
             </ul>
         </div>
      </section>
+<section class="bodyNavBullet">
+  <span class="responsiveSlider_navBullet navBullet"></span>
+  <span class="responsiveSlider_navBullet navBullet"></span>
+  <span class="responsiveSlider_navBullet navBullet"></span>
+  <span class="responsiveSlider_navBullet navBullet"></span>
+  <span class="responsiveSlider_navBullet navBullet"></span>
+  <span class="responsiveSlider_navBullet "></span>
+</section>
+
 
      <section>
        <div class="primaryBanner_container">
@@ -360,7 +323,7 @@
           <div class="productBlock">
               <a class="productLink">
                 <img class="productImg" src="img/carousel/11-136602204.jpg">
-                <h3 class="productName" data-track="product-title" id="productBlock_productName">
+                <h3 class="productName" id="productBlock_productName">
                 Youth To The People Superfood Cleanser</h3>
                 <button class="papBannerLink"> BACK IN STOCK</button>
                 <span class="productBlock_price">£12.00</span>
@@ -372,7 +335,7 @@
           <div class="productBlock">
               <a class="productLink">
                 <img class="productImg" src="img/carousel/22-13762426.jpg" alt="">
-                <h3 class="productName" data-track="product-title" id="productBlock_productName-13313764">
+                <h3 class="productName">
                 Then I Met You Living Cleansing Balm </h3>
                 <button class="papBannerLink">EXCLUSIVE</button>
                 <span class="productBlock_price">£32.00</span>
@@ -417,76 +380,24 @@
      </div>
       </section>
 
-      <section class="bodyRadio">
-        <div class="boxRadio">
-            <div class="checkboxRadio">
-             <label class="radio-btn2">
-               <input class="inputRadio" type="radio" name="r">
-                <span class="checkmark"></span>
-             </label>
-             <label class="radio-btn2">
-              <input class="inputRadio" type="radio" name="r">
-               <span class="checkmark"></span>
-            </label>
-            <label class="radio-btn2">
-              <input class="inputRadio" type="radio" name="r">
-               <span class="checkmark"></span>
-            </label>
-            <label class="radio-btn2">
-              <input class="inputRadio" type="radio" name="r">
-               <span class="checkmark"></span>
-            </label>
-            <label class="radio-btn2">
-              <input class="inputRadio" type="radio" name="r">
-               <span class="checkmark"></span>
-            </label>
-        </div>
-        <div class="checkboxRadio">
-          <label class="radio-btn2">
-            <input class="inputRadio" type="radio" name="r">
-             <span class="checkmark"></span>
-          </label>
-          <label class="radio-btn2">
-           <input class="inputRadio" type="radio" name="r">
-            <span class="checkmark"></span>
-         </label>
-         <label class="radio-btn2">
-           <input class="inputRadio" type="radio" name="r">
-            <span class="checkmark"></span>
-         </label>
-         <label class="radio-btn2">
-           <input class="inputRadio" type="radio" name="r">
-            <span class="checkmark"></span>
-         </label>
-         <label class="radio-btn2">
-           <input class="inputRadio" type="radio" name="r">
-            <span class="checkmark"></span>
-         </label>
-       </div>
-       <div class="checkboxRadio">
-        <label class="radio-btn2">
-          <input class="inputRadio" type="radio" name="r">
-           <span class="checkmark3"></span>
-        </label>
-        <label class="radio-btn2">
-         <input class="inputRadio" type="radio" name="r">
-          <span class="checkmark3"></span>
-       </label>
-       <label class="radio-btn2">
-         <input class="inputRadio" type="radio" name="r">
-          <span class="checkmark3"></span>
-       </label>
-       <label class="radio-btn2">
-         <input class="inputRadio" type="radio" name="r">
-          <span class="checkmark3"></span>
-       </label>
-       <label class="radio-btn2">
-         <input class="inputRadio" type="radio" name="r">
-          <span class="checkmark3"></span>
-       </label>
-       </div>
-       </div>
-        </section>
+      <section class="bodyNavBullet">
+        <span class="responsiveProductCarousel navBullet"></span>
+        <span class="responsiveProductCarousel navBullet"></span>
+        <span class="responsiveProductCarousel navBullet"></span>
+        <span class="responsiveProductCarousel navBullet"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+        <span class="responsiveProductCarousel"></span>
+      </section>
 
         <div class="responsiveProductTitle">
           <h2 class="responsiveProduct_title">INSIDER INFORMATION</h2>
