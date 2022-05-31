@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=IBM+Plex+Sans+Arabic:wght@100&family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=IBM+Plex+Sans+Arabic:wght@100&family=Inter:wght@400;500;600&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=IBM+Plex+Sans+Arabic:wght@100&display=swap");
 
@@ -6,33 +6,12 @@
 * {
   font-family: "Inter", Helvetica, sans-serif;
   box-sizing: border-box;
+  overflow-x:hidden;
 }
-/*
-.SubMenu_container{
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 100%;
-  height: 32px;
-  width: 100%;
-  z-index: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  background: #f5f9fc;
-}
-
-.sessionSettings_button{
-  border: none;
-  color:#000;
-  background:#f5f9fc;
-}
-.sessionSettings_button:hover{
-  background-color: #e6e6e6;
-  text-decoration: none;
-}
-*/
  
 header{
   position: fixed;
+  overflow-y: hidden;
   width: 100%;
   background: #fff;
   z-index: 9999;
@@ -41,11 +20,14 @@ header{
 
 
 div.headerLine{
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items:center;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 30px;
-  height: 110px;
+  height: 100px;
 }
 
 .headerLogo{
@@ -115,32 +97,35 @@ input.search-tst {
 }
 .responsiveBasket_icon{
 position: relative;
+overflow: hidden;
 }
 .responsiveBasket_items{
   position: absolute;
+  overflow: hidden;
   top: calc(50% - 8px);
   left: calc(50% - 8px);
 }
-
+nav{
+  overflow: hidden;
+}
 .MenuListStyle{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none; 
-  margin: -7px; 
   background:#000000; 
-  height: 40px; 
 }
 .nav-item{
+  display: block;
+  line-height:40px;
+  width: 100%;
+  padding: 8px 17px;
   text-decoration: none; 
   background:#000000; 
   color:#fff; 
-  padding:0px 15px; 
   font-family: "Inter",Helvetica,sans-serif;
   font-size: 14px;
   line-height: 1.42; 
-  line-height:40px; 
-  display: block; 
- 
+  
   -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
   -o-transition: all 0.3s 0.01s ease;
   -webkit-transition: all 0.3s 0.01s ease;
@@ -150,11 +135,13 @@ position: relative;
   color:#000000;
 }
 
-.bodyContainer{ 
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 143px;
-  
+ .wrapper { 
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  margin-top: 135px;
 }
 .responsiveUsp_body {
   display: flex;
@@ -177,6 +164,11 @@ position: relative;
   align-items: center;
   flex-basis: auto;
   text-decoration: none;
+  font-family: "Inter",Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 500;
+  letter-spacing: .2px;
   color: black;
 }
 
@@ -205,6 +197,7 @@ position: relative;
 }
 
 .responsiveBasket_container {
+  overflow: hidden;
   padding: 9.6px 16px;
   cursor: pointer;
   text-align: center;
@@ -254,7 +247,7 @@ position: relative;
   color: #000;
   padding: 12px 8px;
   background: #fae2cf;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .slider-container {
@@ -277,9 +270,9 @@ position: relative;
   position: absolute;
   top: calc(50% - 20px);
   width: 100%;
-
 }
 .btn-prev, .btn-next {
+  overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   width: 40px;
@@ -356,12 +349,6 @@ position: relative;
   border-bottom: 4px solid black;
 }
 
-.buttonProducte {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .productBlock {
   display: flex;
   flex-direction: column;
@@ -412,6 +399,7 @@ position: relative;
 
 }
 .product-prev, .product-next {
+  overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   width: 40px;
@@ -635,20 +623,27 @@ position: relative;
 }
 
 footer {
+  max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
   width: 100%;
 }
 
 .eastendFooter_sectionTwo-dark {
   display: flex;
   width: 100%;
+  padding: 32px 16px 0 16px;
   background: black;
   color: white;
   text-decoration: none;
 }
 
 .eastendFooter_socialIcons {
-  padding: 30px 40px;
   width: 50%;
+  padding-bottom: 40px;
+  margin: 0 16px;
 }
 
 .signUp_button {
@@ -666,13 +661,15 @@ footer {
 }
 
 .signUp_button:hover {
+  overflow: hidden;
   text-decoration: 1px underline black;
   background: #e5e5e5;
 }
 
 .eastendFooterIcons {
   width: 50%;
-  padding: 30px;
+  padding-bottom: 17.6px;
+  margin: 0 16px
 }
 
 ul.eastendFooterIcons_list {
@@ -680,9 +677,8 @@ ul.eastendFooterIcons_list {
   justify-content: flex-start;
   padding: 20px 0;
 }
-
-.eastendFooterIcons_Svg {
-  margin-right: 10px;
+.eastendFooterIcons_listItem{
+  padding: 0 16px 10px 0 ;
 }
 
 .eastendFooter_signupTitle,
@@ -695,31 +691,49 @@ ul.eastendFooterIcons_list {
 }
 
 
-
 .eastendFooter_section-dark {
   display: flex;
+  padding: 0 16px 32px 16px;
   background: #000;
   color: #ffffff;
 }
 
 .footerLinkColumns-containers {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 50%;
-  margin: 30px;
+  border-top: 1px solid white;
+  padding-top: 8px;
+}
+.footerLinkColumns-containers2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 6.4px;
+  margin-right: 6.4px;
+}
+.footerColums-container{
+  padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    padding-left: 8px;
 }
 
-.footerLinkColumns_first {
-  padding: 20px;
-  border-top: 1px solid rgb(255, 255, 255);
-
+.footerLinkColumn-LevelOne{
+  width: 206px;
+  margin: 0 16px;
 }
-
-.footerLink {
-  font-family: "Inter", Helvetica, sans-serif;
+.footerLinkColumn-LevelTwo{
+  width: 206px;
+  margin: 0 16px;
+  border-top: 1px solid white;
+}
+.footerLink{
+  display: block;
+  padding: 16px 16px 8px 8px;
+  margin-bottom: 8px;
+  font-family: "Inter",Helvetica,sans-serif;
   font-size: 15px;
-  line-height: 2.6;
+  line-height: 1.6;
   color: white;
   font-weight: 600;
 }
@@ -743,11 +757,12 @@ ul.eastendFooterIcons_list {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 40px;
+  padding: 0 16px;
 }
 .Footer_logoContainer{
   display: flex;
   width: 50%;
+  margin: 32px 16px 24px 16px;
 }
 .thgCopyright svg {
   max-width: 130px;
@@ -767,7 +782,7 @@ ul.eastendFooterIcons_list {
 
 .Footer_paySecureIcons_container{
   width: 50%;
-  margin-right: 50px;
+  margin: 32px 16px 24px 0;
 }
 .Footer_paySecurelyTitle{
   font-family: "Inter",Helvetica,sans-serif;
@@ -784,7 +799,7 @@ ul.eastendFooterIcons_list {
   justify-content: flex-start;
   width: auto;
 }
+
 .footerPaymentIcons_listItem{
   padding: 2px;
-  
 }
