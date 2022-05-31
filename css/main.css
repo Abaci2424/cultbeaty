@@ -11,7 +11,6 @@
  
 header{
   position: fixed;
-  overflow-y: hidden;
   width: 100%;
   background: #fff;
   z-index: 9999;
@@ -20,22 +19,22 @@ header{
 
 
 div.headerLine{
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items:center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 30px;
-  height: 100px;
+  height: auto;
+  padding: 0 16px;
 }
-
+.headerLogoContainer{
+  padding: 0 16px;
+  margin: 4px 0;
+}
 .headerLogo{
   position: relative;
   width: 112px;
-  order: 1;
-  flex-basis: 200px;
-  flex-grow: 0;
+  margin: 4px 56px 4px 0;
 }
 
 .boxSearch {
@@ -71,7 +70,13 @@ input.search-tst {
 .icon:hover {
   background: #f2f2f2;
 }
-
+.responsiveAccountContainer{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  height: auto;
+}
 .responsiveAccountHeader{
   display: flex;
   align-items:center;
@@ -86,7 +91,7 @@ input.search-tst {
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  height: 40px;
+  height: auto;
   font-size: 14px;
   line-height: 1.42;
   background-color: #efefef;
@@ -96,21 +101,27 @@ input.search-tst {
   margin-right: 30px;
 }
 .responsiveBasket_icon{
-position: relative;
-overflow: hidden;
+ position: relative;
 }
-.responsiveBasket_items{
+.responsiveBasket_items {
   position: absolute;
-  overflow: hidden;
-  top: calc(50% - 8px);
-  left: calc(50% - 8px);
-}
-nav{
-  overflow: hidden;
+  top: 12px;
+  left: 8px;
+  background-color: transparent;
+  color: #fff;
+  height: auto;
+  min-width: 16px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.35;
 }
 .MenuListStyle{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none; 
   background:#000000; 
 }
@@ -118,7 +129,7 @@ nav{
   display: block;
   line-height:40px;
   width: 100%;
-  padding: 8px 17px;
+  padding: 8px 16px;
   text-decoration: none; 
   background:#000000; 
   color:#fff; 
@@ -181,7 +192,6 @@ nav{
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
-  height: 44px;
   display: inline-flex;
   box-shadow: none;
   justify-content: center;
@@ -197,18 +207,17 @@ nav{
 }
 
 .responsiveBasket_container {
-  overflow: hidden;
   padding: 9.6px 16px;
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
-  height: 44px;
+  height: auto;
+  width: auto;
   display: inline-flex;
   box-shadow: none;
   justify-content: center;
   align-self: stretch;
   align-items: center;
-  width: auto;
   text-decoration: none;
 }
 
@@ -216,13 +225,7 @@ nav{
   position: relative;
 }
 
-.responsiveBasket_items {
-  background-color: transparent;
-  color: #fff;
-  height: 16px;
-  min-width: 16px;
 
-}
 
 .responsiveBasket_name {
   color: #000;
@@ -272,11 +275,9 @@ nav{
   width: 100%;
 }
 .btn-prev, .btn-next {
-  overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   width: 40px;
-  height: 45px;
   border: none;
   border-radius: 3px 0 0 3px;
   padding: 16px;
@@ -291,6 +292,7 @@ nav{
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 10px;
 }
 
 .responsiveSlider_navBullet {
@@ -399,11 +401,9 @@ nav{
 
 }
 .product-prev, .product-next {
-  overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   width: 40px;
-  height: 45px;
   border: none;
   border-radius: 3px 0 0 3px;
   padding: 16px;
@@ -465,7 +465,6 @@ nav{
 
 .primaryBanner_container {
   display: block;
-  overflow: hidden;
   width: 100%;
   height: 142.48px;
   margin: 70px 0;
@@ -481,27 +480,22 @@ nav{
 }
 
 .threeItemEditorial_container {
-  /* todo: убрать абсолютную величину, выровнять по центру*/
-
   display: flex;
   align-items: flex-start;
   padding: 0 16px;
 }
 
 .threeItemEditorial {
-  /* todo: убрать абсолютную величину*/
   display: flex;
   justify-content: space-evenly;
   padding: 0 16px;
   width: 100%;
-
 }
 
 .threeItemEditorial_link {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -624,10 +618,9 @@ nav{
 
 footer {
   max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -661,7 +654,6 @@ footer {
 }
 
 .signUp_button:hover {
-  overflow: hidden;
   text-decoration: 1px underline black;
   background: #e5e5e5;
 }
@@ -711,11 +703,8 @@ ul.eastendFooterIcons_list {
   margin-right: 6.4px;
 }
 .footerColums-container{
-  padding-top: 16px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-    padding-left: 8px;
+  padding: 16px 16px 8px 8px;
+  margin-bottom: 8px;
 }
 
 .footerLinkColumn-LevelOne{
