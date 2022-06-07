@@ -8,7 +8,9 @@
   box-sizing: border-box;
   overflow-x:hidden;
 }
- 
+ body{
+  font-family: "Inter", Helvetica, sans-serif;
+ }
 header{
   position: fixed;
   width: 100%;
@@ -22,7 +24,7 @@ div.headerLine{
   display: flex;
   justify-content: space-between;
   align-items:center;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   height: auto;
   padding: 0 16px;
@@ -35,6 +37,9 @@ div.headerLine{
   position: relative;
   width: 112px;
   margin: 4px 56px 4px 0;
+}
+.logo{
+  display: block;
 }
 
 .boxSearch {
@@ -121,21 +126,20 @@ input.search-tst {
 }
 .MenuListStyle{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none; 
   background:#000000; 
 }
 .nav-item{
   display: block;
-  line-height:40px;
   width: 100%;
-  padding: 8px 16px;
+  padding: 0 16px;
   text-decoration: none; 
   background:#000000; 
   color:#fff; 
   font-family: "Inter",Helvetica,sans-serif;
   font-size: 14px;
-  line-height: 1.42; 
+  line-height: 40px; 
   
   -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
   -o-transition: all 0.3s 0.01s ease;
@@ -147,12 +151,12 @@ input.search-tst {
 }
 
  .wrapper { 
-  max-width: 1400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
   width: 100%;
-  margin-top: 135px;
+  margin-top: 150px;
 }
 .responsiveUsp_body {
   display: flex;
@@ -264,6 +268,11 @@ input.search-tst {
   width: 100%;
 }
 
+.slider-item a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .slider-itemImg {
   width: 100%;
 }
@@ -476,6 +485,7 @@ input.search-tst {
 }
 
 .primaryImage {
+  height: 97%;
   width: 100%;
 }
 
@@ -617,7 +627,7 @@ input.search-tst {
 }
 
 footer {
-  max-width: 1400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
@@ -627,7 +637,7 @@ footer {
 .eastendFooter_sectionTwo-dark {
   display: flex;
   width: 100%;
-  padding: 32px 16px 0 16px;
+  padding: 32px 36px 0 36px;
   background: black;
   color: white;
   text-decoration: none;
@@ -650,7 +660,7 @@ footer {
   text-align: center;
   margin-top: 30px;
   width: 92px;
-  height: 38px;
+  height: auto;
 }
 
 .signUp_button:hover {
@@ -685,7 +695,7 @@ ul.eastendFooterIcons_list {
 
 .eastendFooter_section-dark {
   display: flex;
-  padding: 0 16px 32px 16px;
+  padding: 0 36px;
   background: #000;
   color: #ffffff;
 }
@@ -694,6 +704,7 @@ ul.eastendFooterIcons_list {
   width: 50%;
   border-top: 1px solid white;
   padding-top: 8px;
+  margin: 0 16px;
 }
 .footerLinkColumns-containers2{
   display: flex;
@@ -726,7 +737,10 @@ ul.eastendFooterIcons_list {
   color: white;
   font-weight: 600;
 }
-
+.footerLinkColumns_second, .footerLinkColumns_first{
+  position: relative;
+  left: 11px;
+}
 .footerLinkColumns_Link {
   font-family: "Inter", Helvetica, sans-serif;
   font-size: 14px;
