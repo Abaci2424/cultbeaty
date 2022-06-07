@@ -190,12 +190,11 @@ input.search-tst {
 }
 
 .responsiveAccountHeader {
-  padding: 9.6px 16px;
+  padding: 9px 16px;
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
   display: inline-flex;
-  box-shadow: none;
   justify-content: center;
   align-self: stretch;
   align-items: center;
@@ -209,14 +208,13 @@ input.search-tst {
 }
 
 .responsiveBasket_container {
-  padding: 9.6px 16px;
+  padding: 9px 16px;
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
   height: auto;
   width: auto;
   display: inline-flex;
-  box-shadow: none;
   justify-content: center;
   align-self: stretch;
   align-items: center;
@@ -794,3 +792,27 @@ ul.eastendFooterIcons_list {
 .footerPaymentIcons_listItem{
   padding: 2px;
 }
+
+@media screen and (min-width: 1200px) {
+  .mobile-header {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeItemEditorial_container {
+    flex-direction: column;
+  }
+  .threeItemEditorial {
+    margin-bottom: 20px;
+  }
+}
+
+
