@@ -56,7 +56,6 @@ input.search-tst {
 .search-tst {
   width: 100%;
   height: 40px;
-  padding-left: 15px;
   border: 1px solid #8c8c8c;;
   padding: 7px;
 }
@@ -118,7 +117,6 @@ input.search-tst {
   min-width: 16px;
   font-family: "Inter", Helvetica, sans-serif;
   font-size: 12px;
-  line-height: 16px;
   font-weight: 700;
   justify-content: center;
   align-items: center;
@@ -127,20 +125,20 @@ input.search-tst {
 .MenuListStyle{
   display: flex;
   justify-content: center;
-  list-style: none; 
-  background:#000000; 
+  list-style: none;
+  background:#000000;
 }
 .nav-item{
   display: block;
   width: 100%;
   padding: 0 16px;
-  text-decoration: none; 
-  background:#000000; 
-  color:#fff; 
+  text-decoration: none;
+  background:#000000;
+  color:#fff;
   font-family: "Inter",Helvetica,sans-serif;
   font-size: 14px;
-  line-height: 40px; 
-  
+  line-height: 40px;
+
   -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
   -o-transition: all 0.3s 0.01s ease;
   -webkit-transition: all 0.3s 0.01s ease;
@@ -150,7 +148,7 @@ input.search-tst {
   color:#000000;
 }
 
- .wrapper { 
+ .wrapper {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -369,18 +367,17 @@ input.search-tst {
   height: 496px;
 }
 
+.productLink {
+  display: block;
+}
+
 .productName {
-  display: inline-block;
-  margin: 15px 4px;
-  text-align: left;
+  margin: 15px 0;
 }
 
 .productBlock_price {
-  display: inline-flex;
-  flex-wrap: wrap;
-  width: 270px;
+  display: block;
   text-align: left;
-  padding: 4px 15px;
   font-size: 15px;
   line-height: 1.6;
   color: #000;
@@ -430,7 +427,7 @@ input.search-tst {
   border: 1px solid black;
   background: white;
   padding: 4px;
-  margin: 10px 4px;
+  margin: 10px 0;
   font-size: 13px;
   line-height: 1.54;
   font-weight: 400;
@@ -521,8 +518,7 @@ input.search-tst {
 }
 
 .threeItemEditorial_textContainer {
-  width: 407px;
-  height: 196px;
+  width: 100%;
   text-align: center;
   flex-direction: column;
   color: #333;
@@ -564,8 +560,8 @@ input.search-tst {
 
 .threeItemEditorial-CTAText {
   display: inline-table;
-  width: 373px;
-  height: 20.016px;
+  width: 100%;
+  height: 20px;
   margin-top: 16px;
   border: 1px solid black;
   padding: 8px 16px;
@@ -695,7 +691,7 @@ ul.eastendFooterIcons_list {
 
 .eastendFooter_section-dark {
   display: flex;
-  padding: 0 36px;
+  padding: 0 36px 16px;
   background: #000;
   color: #ffffff;
 }
@@ -718,10 +714,6 @@ ul.eastendFooterIcons_list {
   margin-bottom: 8px;
 }
 
-.footerLinkColumn-LevelOne{
-  width: 206px;
-  margin: 0 16px;
-}
 .footerLinkColumn-LevelTwo{
   width: 206px;
   margin: 0 16px;
@@ -729,17 +721,13 @@ ul.eastendFooterIcons_list {
 }
 .footerLink{
   display: block;
-  padding: 16px 16px 8px 8px;
+  padding: 16px 16px 8px 0;
   margin-bottom: 8px;
   font-family: "Inter",Helvetica,sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: white;
   font-weight: 600;
-}
-.footerLinkColumns_second, .footerLinkColumns_first{
-  position: relative;
-  left: 11px;
 }
 .footerLinkColumns_Link {
   font-family: "Inter", Helvetica, sans-serif;
@@ -770,7 +758,7 @@ ul.eastendFooterIcons_list {
 .thgCopyright svg {
   max-width: 130px;
   height: 15px;
-  
+
 }
 .thgCopyright_text {
   font-family: "Inter",Helvetica,sans-serif;
