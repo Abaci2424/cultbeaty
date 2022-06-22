@@ -475,6 +475,7 @@ input.search-tst {
   margin: 40px 0;
   overflow-x: scroll;
 }
+
 .brandLogos_cards::-webkit-scrollbar {
   display: none;
 }
